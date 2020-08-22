@@ -5,10 +5,6 @@ import menu from '../data/menu'
 import '../styles/login.css'
 
 const MenuProducts = (props) => {
-    //QUITAR CUANDO SE CONECTE A LA BD
-    // if(props.user.email === "gabyalvarzb@gmail.com") {
-    //     rol = "cocinero"
-    // }
 
     return ( 
         <Fragment>

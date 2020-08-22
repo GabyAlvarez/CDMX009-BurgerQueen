@@ -1,20 +1,22 @@
-import React,{Fragment, useState} from 'react';
-import Routes from './Routes';
-import NavBar from './Components/NavBar';
+import React, {Fragment, useState} from 'react';
 import 'firebase/firestore';
-import 'firebase/auth'
+import 'firebase/auth';
+import Login from './Components/Login';
+import Home from './Components/Home';
+
 
 function App() {
 
-  const [isLoggin, setisLoggin] = useState(true)
+  const [isLoggin, setisLoggin] = useState(false);
   
   return (
     <Fragment>
-      {isLoggin &&
-        <NavBar/>
+      {
+        !isLoggin ? 
+          <Login setisLoggin= {setisLoggin} />: 
+          <Home />
       }
-      
-      <Routes setisLoggin={setisLoggin}/>
+
     </Fragment>
   );
 }

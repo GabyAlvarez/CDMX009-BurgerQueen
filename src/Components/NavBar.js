@@ -10,7 +10,8 @@ const NavBar = ({setisLoggin}) => {
 
     const logout = async () => {
         await firebase.auth().signOut();
-        history.push("/login");
+        history.push("/");
+        window.location.reload(true)
     }
 
     return ( 
