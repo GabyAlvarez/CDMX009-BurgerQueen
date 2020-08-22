@@ -1,14 +1,5 @@
 # Burger Queen
-
-## Resumen del proyecto
-
-Esta es la información que tenemos del cliente:
-
-> Somos **Burguer Queen**, una cadena de comida 24hrs.
->
-> Nuestra propuesta de servicio 24hrs ha tenido muy buena acogida y, para
-> seguir creciendo, necesitamos un sistema que nos ayude a tomar los pedidos de
-> nuestros clientes.
+Burger Queen es una cadena de restaurantes que ofrece su servicio las 24 horas y busca reducir sus tiempos de toma de orden y entrega dentro de sus establecimientos.Por ello se desarrolló una single page application **(SPA)**, donde se gestiona el pedido, la preparacion y la entrega de los alimentos, teniendo una comunicación fluida entre el área de comida y el área de cocina.
 
 ## Criterios de aceptación del proyecto
 
