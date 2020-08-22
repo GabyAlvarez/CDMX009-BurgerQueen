@@ -2,8 +2,6 @@
 
 ## Resumen del proyecto
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
-
 Esta es la información que tenemos del cliente:
 
 > Somos **Burguer Queen**, una cadena de comida 24hrs.
@@ -11,94 +9,6 @@ Esta es la información que tenemos del cliente:
 > Nuestra propuesta de servicio 24hrs ha tenido muy buena acogida y, para
 > seguir creciendo, necesitamos un sistema que nos ayude a tomar los pedidos de
 > nuestros clientes.
-
-![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
-
-## Objetivos de aprendizaje
-
-1. El objetivo principal de es aprender a construir una _interfaz web_ usando
-   el _framework_ elegido ([React](https://reactjs.org/), [Vue](https://es.vuejs.org/index.html) o [Angular](https://angular.io/)) o vanilla JS. Todos estos frameworks de
-   Front-end atacan el mismo problema: **cómo mantener la interfaz y el estado
-   sincronizados**. Así que esta experiencia espera familiarizarte con el concepto
-   de _estado de pantalla_, y cómo cada cambio sobre el estado se va a
-   ir reflejando en la interfaz (por ejemplo, cada vez que agregamos un _producto_
-   a un _pedido_, la interfaz debe actualizar la lista del pedido y el total).
-
-2. Como objetivo secundario, deberás seguir las recomendaciones para PWAs
-   (_Progressive Web Apps_), lo cual incluye conceptos como **offline**. Para
-   guiarte con respecto a este tema te recomendamos usar [Lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=es),
-   que es una herramienta de Google que nos ayuda a asegurar que nuestras web apps
-   sigan "buenas prácticas". De hecho, usaremos Lighthouse a la hora de evaluar el
-   proyecto.
-
-Recuerda colocar en esta seccion los objetivos de aprendizaje que quedaron
-pendientes de tu proyecto anterior.
-
-### HTML y CSS
-
-- [ ] HTML semántico
-- [ ] CSS flexbox
-- [ ] Sass
-- [ ] Maquetación
-
-### Frontend Development
-
-- [ ] Componentes
-- [ ] Manejo del estado
-
-### PWA
-
-- [ ] Concepto
-- [ ] Utilidad
-- [ ] Que es [Workbox](https://developers.google.com/web/tools/workbox)
-- [ ] Qué es un `serviceWorker`
-
-### React
-
-- [ ] [`JSX`](https://es.reactjs.org/docs/introducing-jsx.html)
-- [ ] [Componentes `class` y componentes `function`](https://es.reactjs.org/docs/components-and-props.html#function-and-class-components)
-- [ ] `props`
-- [ ] [Manejo de eventos](https://es.reactjs.org/docs/handling-events.html)
-- [ ] [Listas y keys](https://es.reactjs.org/docs/lists-and-keys.html)
-- [ ] [Renderizado condicional](https://es.reactjs.org/docs/conditional-rendering.html)
-- [ ] [Levantamiento de estados](https://es.reactjs.org/docs/lifting-state-up.html)
-- [ ] [`hooks`](https://es.reactjs.org/docs/hooks-intro.html)
-- [ ] [`CSS` modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet)
-- [ ] [React Router](https://reacttraining.com/react-router/web)
-
-### Firebase
-
-- [ ] Firestore
-- [ ] Firebase security rules
-- [ ] Observables
-
-### Testing
-
-- [ ] Testeo de tus interfaces
-- [ ] Testeo de componentes
-- [ ] Testeo asíncrono
-- [ ] Mocking
-
-### Colaboración en Github
-
-- [ ] Branches
-- [ ] Pull Requests
-- [ ] Tags
-
-### Organización en Github
-
-- [ ] Projects
-- [ ] Issues
-- [ ] Labels
-- [ ] Milestones
-
-### Buenas prácticas de desarrollo
-
-- [ ] Modularización
-- [ ] Nomenclatura / Semántica
-- [ ] Linting
-
----
 
 ## Criterios de aceptación del proyecto
 
@@ -176,5 +86,72 @@ rápidamente a los clientes que las hicieron.
 - Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 - Los datos se deben mantener íntegros, incluso después de que un pedido ha
   terminado. Todo esto para poder tener estadísticas en el futuro.
+---
+
+## Objetivos de aprendizaje
+
+### HTML y CSS
+
+- [ ] HTML semántico
+- [ ] CSS flexbox
+- [ ] Sass
+- [ ] Maquetación
+
+### Frontend Development
+
+- [ ] Componentes
+- [ ] Manejo del estado
+
+### PWA
+
+- [ ] Concepto
+- [ ] Utilidad
+- [ ] Que es [Workbox](https://developers.google.com/web/tools/workbox)
+- [ ] Qué es un `serviceWorker`
+
+### React
+
+- [ ] [`JSX`](https://es.reactjs.org/docs/introducing-jsx.html)
+- [ ] [Componentes `class` y componentes `function`](https://es.reactjs.org/docs/components-and-props.html#function-and-class-components)
+- [ ] `props`
+- [ ] [Manejo de eventos](https://es.reactjs.org/docs/handling-events.html)
+- [ ] [Listas y keys](https://es.reactjs.org/docs/lists-and-keys.html)
+- [ ] [Renderizado condicional](https://es.reactjs.org/docs/conditional-rendering.html)
+- [ ] [Levantamiento de estados](https://es.reactjs.org/docs/lifting-state-up.html)
+- [ ] [`hooks`](https://es.reactjs.org/docs/hooks-intro.html)
+- [ ] [`CSS` modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet)
+- [ ] [React Router](https://reacttraining.com/react-router/web)
+
+### Firebase
+
+- [ ] Firestore
+- [ ] Firebase security rules
+- [ ] Observables
+
+### Testing
+
+- [ ] Testeo de tus interfaces
+- [ ] Testeo de componentes
+- [ ] Testeo asíncrono
+- [ ] Mocking
+
+### Colaboración en Github
+
+- [ ] Branches
+- [ ] Pull Requests
+- [ ] Tags
+
+### Organización en Github
+
+- [ ] Projects
+- [ ] Issues
+- [ ] Labels
+- [ ] Milestones
+
+### Buenas prácticas de desarrollo
+
+- [ ] Modularización
+- [ ] Nomenclatura / Semántica
+- [ ] Linting
 
 ---
