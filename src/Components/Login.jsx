@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import logoImage from '../assets/image/logoBurgerixtli.png';
 // import {useFirebaseApp, useUser} from 'reactfire';
 import {useFirebaseApp} from 'reactfire';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
-const Login = ({setisLoggin}) => {
+const Login = ({setisLoggin, setHaveAcount}) => {
     const history = useHistory();    
     const firebase = useFirebaseApp();
     const db = firebase.firestore();
@@ -12,36 +12,6 @@ const Login = ({setisLoggin}) => {
 
     const[ email, setEmail] = useState('');
     const[ password, setPassword] = useState('');
-    //const[ rol, setRol] = useState('Mesero');
-
-    // const createAcount = async () => {
-    //     await firebase.auth()
-    //         .createUserWithEmailAndPassword(email, password).then(exitoCallback, () => {
-    //                 console.log("Ya existe una cuenta con este E-mail")
-    //             });
-    // }
-
-    const exitoCallback = () => {
-        // Guarda en la BDD
-        db.collection("Users").add({
-            usuario: email,
-            rol: rol
-        }).then(() => {
-              // Guardamos el usuario en LocalStorage
-                db.collection("Users").where("usuario", "==", email)
-                .get()
-                .then(function(querySnapshot) {
-                    querySnapshot.forEach(function(doc) {
-                        let user = doc.data();
-                        user['id'] = doc.id;
-                        localStorage.setItem("user", JSON.stringify(user))
-                    });
-                })
-                .catch(function(error) {
-                    console.log("Error getting documents: ", error);
-            });
-        });
-    }
 
     const login = async () => {
         await firebase.auth().signInWithEmailAndPassword(email, password)
@@ -69,16 +39,16 @@ const Login = ({setisLoggin}) => {
 
         switch(rol) {
             case "Mesero":
-                // history.push("/Products");
+                history.push("/Products");
                 break;
             case "Cocinero":
-                // history.push("/Kitchen");
+                history.push("/Kitchen");
                 break;
             default:
                 history.push("/");
         }
     }
-    
+
     // Observador de estado
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
@@ -98,15 +68,11 @@ const Login = ({setisLoggin}) => {
                 
                 <input type="email" id="email" placeholder="Email" onChange={(ev) => setEmail(ev.target.value) } />
                 <input type="password" id="password" placeholder="Password" onChange={ (ev) => setPassword(ev.target.value) }/>
-                
-                {/* <select onChange = { e => setRol(e.target.value)}
-                        value={rol}>
-                    <option value="Mesero">Mesero</option> 
-                    <option value="Cocinero">Cocinero</option>
-                </select> */}
-
-                {/* <button onClick={createAcount}>Create account</button> */}
-                <button onClick={login}>Login</button>
+               
+                <button className="btn-menu" onClick={login}>Login</button>
+                <p>¿No tienes cuenta?</p>
+                <button className="btn-menu"
+                onClick={() => setHaveAcount(false)} >Registrate</button>
             </div>
         </div>
      );

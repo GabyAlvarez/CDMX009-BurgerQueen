@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet');
 
-html body {
+body{
     margin: 0;
     padding: 0px;
-    font-family: 'Nunito', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 $pColor: rgb(255,169,2);
@@ -26,6 +24,10 @@ $radius: 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.login-input p{
+    color: white;
 }
 
 .logo-circle{
