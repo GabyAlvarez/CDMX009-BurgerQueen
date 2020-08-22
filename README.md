@@ -1,5 +1,9 @@
 # Burger Queen
-Burger Queen es una cadena de restaurantes que ofrece su servicio las 24 horas y busca reducir sus tiempos de toma de orden y entrega dentro de sus establecimientos.Por ello se desarrolló una single page application **(SPA)**, donde se gestiona el pedido, la preparacion y la entrega de los alimentos, teniendo una comunicación fluida entre el área de comida y el área de cocina.
+Burger Queen es una cadena de restaurantes que ofrece su servicio las 24 horas y busca reducir sus tiempos de toma de orden y entrega dentro de sus establecimientos.Por ello se desarrolló una single page application **(SPA)**, donde se gestiona el pedido, la preparación y la entrega de los alimentos, teniendo una comunicación fluida entre el área de comida y el área de cocina.
+
+## Prototipo 
+
+<img src="https://firebasestorage.googleapis.com/v0/b/repoimg-ba7b4.appspot.com/o/mdBurger.png?alt=media&token=d56cd4e2-a3d9-4fc6-a7a4-f9e8f8de73ef" width="400px">
 
 ## Criterios de aceptación del proyecto
 
