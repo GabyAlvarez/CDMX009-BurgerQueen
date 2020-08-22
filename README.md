@@ -6,7 +6,6 @@ Burger Queen es una cadena de restaurantes que ofrece su servicio las 24 horas y
 <img src="https://firebasestorage.googleapis.com/v0/b/repoimg-ba7b4.appspot.com/o/mdBurger.png?alt=media&token=d56cd4e2-a3d9-4fc6-a7a4-f9e8f8de73ef" width="400px">
 
 ## Criterios de aceptación del proyecto
-
 ### Definición del producto
 
 El [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s) nos presenta este _backlog_ que es el resultado de su trabajo con el cliente hasta hoy.
