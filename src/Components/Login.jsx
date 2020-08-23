@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoImage from '../assets/image/logoBurgerixtli.png';
+import logoBurger from '../assets/image/logo.png';
 // import {useFirebaseApp, useUser} from 'reactfire';
 import {useFirebaseApp} from 'reactfire';
 import { useHistory, Link } from "react-router-dom";
@@ -63,7 +63,7 @@ const Login = ({setisLoggin, setHaveAcount}) => {
         <div className="login-container">
             <div className="login-input">
                 <div className="logo-circle">
-                    <img src={logoImage} className="App-logo" alt="logo" />
+                    <img src={logoBurger} className="app-logo" alt="logo" />
                 </div> 
                 
                 <input type="email" id="email" placeholder="Email" onChange={(ev) => setEmail(ev.target.value) } />

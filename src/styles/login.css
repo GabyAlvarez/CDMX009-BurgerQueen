@@ -5,11 +5,13 @@ body {
   font-family: 'Nunito', sans-serif !important;
 }
 
+.login-container {
+  margin: 0px;
+}
+
 .login-input {
-  background-image: url(../assets/image/background.png);
-  margin-top: 10%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../assets/image/fondo.png);
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,20 +25,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
 .login-input p {
   color: white;
 }
 
-.logo-circle {
-  border-radius: 50%;
-  background-color: #ffa902;
-  /*opacity: 0.8;*/
-  width: 300px;
-}
-
-.logo-circle img {
+.app-logo {
   width: 300px;
 }
 
@@ -48,25 +44,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 40px;
 }
 
 .login-input input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 7px;
+  margin: 10px;
   padding: 10px;
-  width: 350px;
-  height: 50px;
-  border-radius: 15px;
-  font-size: x-large;
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: large;
   border-style: none;
-  font-family: font-text;
-}
-
-.login-input button {
-  color: #ffa902;
-  background-color: #161616;
 }
 
 .container-nav {
@@ -94,12 +83,11 @@ body {
   margin: 20px;
   width: 150px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #ffa902;
   background-color: #161616;
   border: none;
   cursor: pointer;
-  font-family: 'Nunito', sans-serif;
   font-size: 16px;
 }
 
@@ -144,7 +132,7 @@ body {
           flex-direction: column;
   width: 150px;
   height: 150px;
-  border-radius: 15px;
+  border-radius: 10px;
   border-style: solid;
   border-color: #ffa902;
   margin: 15px;
@@ -170,7 +158,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid;
   border-color: #ffa902;
 }
@@ -238,7 +226,7 @@ th, td {
 
 .cardOrder {
   width: 25%;
-  border-radius: 15px;
+  border-radius: 10px;
   border-style: solid;
   border-color: #ffa902;
   margin: 15px;

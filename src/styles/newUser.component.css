@@ -1,0 +1,26 @@
+.logo{
+    width: 250px;
+}
+
+select{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: large;
+    border-style: none;
+}
+
+.btn-newUser{
+    margin: 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffa902;
+    background-color: #161616;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}

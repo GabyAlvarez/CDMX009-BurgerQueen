@@ -8,62 +8,43 @@ body{
 
 $pColor: rgb(255,169,2);
 $sColor: #161616;
+$radius: 10px;
 
-$radius: 15px;
-
-// div{
-//      border: 1px solid black;
-// }
+.login-container{
+    margin: 0px;
+}
 
 .login-input{
-    background-image: url(../assets/image/background.png);
-    margin-top: 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../assets/image/fondo.png);
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .login-input p{
     color: white;
 }
 
-.logo-circle{
-    border-radius: 50%;
-    background-color: $pColor;
-    /*opacity: 0.8;*/
+.app-logo{
     width: 300px;
-    img{
-        width: 300px;
-    }
 }
 
 .login-input{
     display: flex;
-    flex-direction: column;
-    margin-top: 40px;    
+    flex-direction: column;  
     input{
         box-sizing: border-box;
-        margin: 7px;
+        margin: 10px;
         padding: 10px;
-        width: 350px;
-        height: 50px;
+        width: 300px;
+        height: 45px;
         border-radius: $radius;
-        font-size: x-large;
+        font-size: large;
         border-style: none;
-        font-family: font-text; 
     }
-    button {
-        color: $pColor;
-        background-color: $sColor;
-    }
-
-    // .loginBtn{
-    //     color: $pColor;
-    //     background-color: $sColor;
-    // }
 }
 
 .container-nav{
@@ -89,7 +70,6 @@ $radius: 15px;
     background-color: $sColor;
     border: none;
     cursor: pointer;
-    font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
 

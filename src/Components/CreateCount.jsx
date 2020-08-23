@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import logoImage from '../assets/image/logoBurgerixtli.png';
+import logo from '../assets/image/logo.png';
 import {useFirebaseApp} from 'reactfire';
+import '../styles/newUser.component.css'
 
 const CreateCount = ({setHaveAcount}) => {
 
@@ -10,7 +11,18 @@ const CreateCount = ({setHaveAcount}) => {
     const [name, setName] = useState('');
     const[ email, setEmail] = useState('');
     const[ password, setPassword] = useState('');
+    //const [confirmPassword, setConfirmPassword] = useState('');
     const[ rol, setRol] = useState('Mesero');
+
+    const validateFields = () => {
+
+        if(!name || !email || !password || !rol){
+            console.log("Favor de verificar los compos");
+        }else{
+            createAcount()
+        }
+
+    }
 
     const createAcount = async () => {
         await firebase.auth()
@@ -45,7 +57,7 @@ const CreateCount = ({setHaveAcount}) => {
         <div className="login-container">
             <div className="login-input">
                 <div className="logo-circle">
-                    <img src={logoImage} className="App-logo" alt="logo" />
+                    <img src={logo} className="logo" alt="logo" />
                 </div> 
                 <input type="text" id="name" placeholder="Nombre" onChange={(ev) => setName(ev.target.value) } />
                 <input type="email" id="email" placeholder="Email" onChange={(ev) => setEmail(ev.target.value) } />
@@ -59,8 +71,8 @@ const CreateCount = ({setHaveAcount}) => {
                     <option value="Cocinero">Cocinero</option>
                 </select>
 
-                <button onClick={createAcount}>Create account</button>
-                <button onClick= {() => setHaveAcount(true) } > Regresar</button>
+                <button className="btn-newUser" onClick={validateFields}>Create Account</button>
+                <button className="btn-newUser" onClick= {() => setHaveAcount(true) } > Regresar</button>
             </div>
         </div>
     )
